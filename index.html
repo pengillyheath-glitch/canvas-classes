@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="An interactive study space for BUSN 230 Business Statistics." />
+  <title>Study Studio · Business Statistics</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" aria-label="Study Studio home">
+        <span class="brand-mark">S</span>
+        <span><strong>Study Studio</strong><small>YOUR LEARNING SPACE</small></span>
+      </a>
+      <div class="course-label">CURRENT COURSE</div>
+      <button class="course-switcher" type="button">
+        <span class="course-icon">∑</span>
+        <span><strong>Business Statistics</strong><small>BUSN 230 · Fall 2026</small></span>
+        <span class="chevron">⌄</span>
+      </button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="#overview"><span>⌂</span> Overview</a>
+        <a class="nav-link" href="#lessons"><span>▤</span> Lessons</a>
+        <a class="nav-link" href="#practice"><span>✳</span> Practice</a>
+        <a class="nav-link" href="#formula-library"><span>ƒ</span> Formula library</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="side-note">
+          <span class="sparkle">✦</span>
+          <strong>Learn by doing.</strong>
+          <p>Understand the idea, see how it works, then practice until it clicks.</p>
+        </div>
+        <div class="profile">
+          <div class="avatar">H</div>
+          <div><strong>My study space</strong><small>Personal learning</small></div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content" id="overview">
+      <header class="topbar">
+        <div class="breadcrumb">My classes <span>/</span> Business Statistics</div>
+        <div class="top-actions"><span class="streak">✦ <b id="xp-total">0 XP</b></span><button class="icon-button" aria-label="Notifications">♧</button></div>
+      </header>
+
+      <section class="welcome">
+        <div>
+          <p class="eyebrow">THURSDAY, NOVEMBER 19, 2026 · STUDY SPACE</p>
+          <h1>Build understanding,<br /><em>one idea at a time.</em></h1>
+          <p class="welcome-copy">A hands-on space for learning Business Statistics. Explore the theory, experiment with the math, and practice making decisions from data.</p>
+          <a class="primary-button" href="#chapter-seven">Continue learning <span>→</span></a>
+        </div>
+        <div class="welcome-art" aria-hidden="true">
+          <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+          <div class="art-card card-back"><span>σ</span><small>STANDARD<br/>DEVIATION</small></div>
+          <div class="art-card card-front"><span>μ</span><small>POPULATION<br/>MEAN</small></div>
+          <div class="art-dot dot-one"></div><div class="art-dot dot-two"></div>
+        </div>
+      </section>
+
+      <section class="section-block" aria-labelledby="progress-heading">
+        <div class="section-heading">
+          <div><p class="eyebrow">YOUR COURSE</p><h2 id="progress-heading">Learning roadmap</h2></div>
+          <span class="muted">BUSN 230 · Fall 2026</span>
+        </div>
+        <div class="progress-card">
+          <div class="progress-copy"><div><strong>Course overview</strong><p>Chapters 1–6 are previous material; Chapters 7–8 are the current focus.</p></div><div class="progress-count"><b>7–8</b><small>CURRENT</small></div></div>
+          <div class="progress-track"><span style="width: 70%"></span></div>
+          <div class="progress-legend"><span><i class="dot done"></i> Previous chapters</span><span><i class="dot current"></i> Current focus</span><span><i class="dot upcoming"></i> Upcoming</span></div>
+        </div>
+        <div class="chapter-grid">
+          <a class="chapter-card completed" href="#lessons"><span class="chapter-number">01–06</span><span class="chapter-status">FOUNDATIONS</span><strong>Statistics essentials</strong><p>Data, probability, sampling, and estimation.</p><span class="chapter-footer">Review previous material <b>↗</b></span></a>
+          <a class="chapter-card selected" href="#chapter-seven"><span class="chapter-number">07</span><span class="chapter-status">CURRENT · START HERE</span><strong>One-sample tests</strong><p>Use sample evidence to evaluate a claim about one population.</p><span class="chapter-footer">Explore chapter <b>→</b></span></a>
+          <a class="chapter-card" href="#chapter-eight"><span class="chapter-number">08</span><span class="chapter-status">CURRENT</span><strong>Two-sample tests</strong><p>Compare two populations or conditions using sample evidence.</p><span class="chapter-footer">Explore chapter <b>→</b></span></a>
+          <a class="chapter-card upcoming" href="#upcoming"><span class="chapter-number">09–10</span><span class="chapter-status">UP NEXT</span><strong>Groups & relationships</strong><p>ANOVA, correlation, and regression analysis.</p><span class="chapter-footer">Coming up <b>·</b></span></a>
+        </div>
+      </section>
+
+      <section class="section-block lesson-section" id="chapter-seven">
+        <div class="section-heading">
+          <div><p class="eyebrow">CHAPTER 07 · ONE-SAMPLE TESTS</p><h2>Start with the big idea</h2></div><span class="lesson-tag">GUIDED LESSON</span>
+        </div>
+        <div class="lesson-layout">
+          <article class="lesson-main">
+            <div class="lesson-intro"><div class="lesson-icon">01</div><div><h3>What is hypothesis testing?</h3><p>THEORY · WHY THIS METHOD EXISTS</p></div></div>
+            <p class="body-copy">A business often makes a claim about a population: average delivery time, average product weight, customer satisfaction, or defect rates. Measuring every member of that population is usually impractical.</p>
+            <p class="body-copy">Hypothesis testing gives us a disciplined way to use a sample to evaluate a population claim. We begin with a stated assumption (the <b>null hypothesis</b>) and ask whether the sample provides strong enough evidence against it.</p>
+            <div class="concept-callout"><span class="callout-icon">✦</span><div><strong>The central question</strong><p>If the null hypothesis were true, would a sample result like this be unusual?</p></div></div>
+            <div class="lesson-intro sublesson"><div class="lesson-icon pale">02</div><div><h3>When should you use it?</h3><p>RECOGNIZE THE PROBLEM</p></div></div>
+            <p class="body-copy">Look for a question that asks whether a population claim is supported by sample evidence. Typical wording includes “is there evidence that,” “has the average changed,” or “is the true mean different from.”</p>
+            <div class="signal-grid"><div><span class="signal good">USE THIS METHOD</span><strong>One population parameter</strong><p>You are evaluating a claim about one population mean or proportion.</p></div><div><span class="signal caution">CHECK FIRST</span><strong>Identify the conditions</strong><p>Check the variable, sample design, distribution assumptions, and whether σ is known before selecting a test.</p></div></div>
+            <div class="lesson-intro sublesson"><div class="lesson-icon pale">03</div><div><h3>Build the hypotheses</h3><p>TURN THE CLAIM INTO A TESTABLE QUESTION</p></div></div>
+            <p class="body-copy">The null hypothesis contains the equality. The alternative describes the evidence you are looking for.</p>
+            <div class="hypothesis-examples">
+              <div><span>Two-tailed</span><code>H₁: μ ≠ μ₀</code><small>Different from the claim</small></div>
+              <div><span>Right-tailed</span><code>H₁: μ &gt; μ₀</code><small>Greater than the claim</small></div>
+              <div><span>Left-tailed</span><code>H₁: μ &lt; μ₀</code><small>Less than the claim</small></div>
+            </div>
+            <button class="text-button" id="show-more-theory" type="button">Read the deeper explanation <span>＋</span></button>
+            <div class="more-theory hidden" id="more-theory"><h4>Why does the null hypothesis include equality?</h4><p>The test needs a specific reference model to calculate how surprising the observed sample would be. The null hypothesis supplies that reference point. The alternative describes departures from it. The data are assessed under the assumption that the null model is true; we do not calculate the probability that the null itself is true.</p></div>
+          </article>
+          <aside class="lesson-aside">
+            <div class="aside-card"><span class="aside-label">LESSON CHECKLIST</span><div class="check-row"><i>✓</i><span>Understand the purpose</span></div><div class="check-row"><i>✓</i><span>Recognize when to test</span></div><div class="check-row"><i>○</i><span>Choose the tail direction</span></div><div class="check-row"><i>○</i><span>Calculate and interpret</span></div></div>
+            <div class="aside-card quote-card"><span class="quote-mark">“</span><p>Statistics is not just about getting a number. It is about using evidence to make a decision.</p><small>YOUR STUDY PRINCIPLE</small></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section-block lab-section" id="practice">
+        <div class="section-heading"><div><p class="eyebrow">INTERACTIVE LAB · CHAPTER 07</p><h2>Experiment with a Z-test</h2></div><span class="lab-tag">TRY IT YOURSELF</span></div>
+        <div class="lab-card">
+          <div class="lab-top"><div><span class="lab-step">LAB 01</span><h3>Is the delivery-time claim believable?</h3><p>A delivery company claims that the population mean delivery time is 30 minutes. Explore how sample evidence changes the test statistic.</p></div><div class="lab-symbol">z = ?</div></div>
+          <div class="lab-content">
+            <div class="controls">
+              <label class="range-control"><span><b>Sample mean (x̄)</b><output id="mean-output">33 min</output></span><input id="sample-mean" type="range" min="25" max="40" step="1" value="33"></label>
+              <label class="range-control"><span><b>Sample size (n)</b><output id="size-output">36</output></span><input id="sample-size" type="range" min="4" max="100" step="1" value="36"></label>
+              <label class="range-control"><span><b>Population standard deviation (σ)</b><output id="sd-output">6 min</output></span><input id="population-sd" type="range" min="2" max="12" step="0.5" value="6"></label>
+              <div class="formula-mini"><span>FORMULA</span><code>z = (x̄ − μ₀) / (σ / √n)</code><small>Use this one-sample Z statistic when σ is known and the test conditions are met.</small></div>
+            </div>
+            <div class="lab-result"><span class="result-label">CALCULATED Z-STATISTIC</span><strong id="z-result">3.000</strong><div class="result-divider"></div><div class="result-detail"><span>Standard error</span><b id="se-result">1.000</b></div><div class="result-detail"><span>Difference from claim</span><b id="diff-result">3.0 min</b></div><div class="curve-wrap"><svg viewBox="0 0 320 130" role="img" aria-label="Normal distribution with sample Z statistic marker"><path d="M10 108 C55 108 75 103 100 77 C125 43 137 13 160 13 C183 13 195 43 220 77 C245 103 265 108 310 108" fill="none" stroke="#8d9ba9" stroke-width="2.5"/><path d="M10 108 C55 108 75 103 100 77 C125 43 137 13 160 13 C183 13 195 43 220 77 C245 103 265 108 310 108 L10 108Z" fill="#dce9e7" opacity=".7"/><line x1="160" y1="12" x2="160" y2="111" stroke="#a9b4bc" stroke-dasharray="3 4"/><line id="z-marker" x1="220" y1="36" x2="220" y2="109" stroke="#c07842" stroke-width="2.5"/><circle id="z-marker-dot" cx="220" cy="36" r="4" fill="#c07842"/><text x="160" y="125" text-anchor="middle" font-size="9" fill="#7f8b95">0</text><text x="11" y="125" font-size="9" fill="#7f8b95">−3</text><text x="309" y="125" text-anchor="end" font-size="9" fill="#7f8b95">+3</text></svg><small>Illustrative normal curve · marker is clipped to the displayed range</small></div></div>
+          </div>
+          <div class="lab-insight"><span>↗</span><p id="lab-insight-text">Your sample mean is 3 minutes above the claim. The standard error is 1 minute, so the observed difference is 3 standard errors from the hypothesized mean.</p></div>
+        </div>
+      </section>
+
+      <section class="section-block practice-section">
+        <div class="section-heading"><div><p class="eyebrow">CHECK YOUR UNDERSTANDING</p><h2>Quick knowledge challenge</h2></div><span class="points-pill">+10 XP</span></div>
+        <div class="question-card">
+          <div class="question-meta"><span>QUESTION 01 OF 03</span><span>CONCEPT · HYPOTHESES</span></div>
+          <h3>A company claims its products weigh an average of 5 pounds. You want to test whether the actual population average is different from 5 pounds.</h3>
+          <p class="question-hint">Which alternative hypothesis matches the question?</p>
+          <div class="answers" id="answers">
+            <button class="answer" data-answer="a"><span>A</span><code>H₁: μ = 5</code></button>
+            <button class="answer" data-answer="b"><span>B</span><code>H₁: μ ≠ 5</code></button>
+            <button class="answer" data-answer="c"><span>C</span><code>H₁: μ &gt; 5</code></button>
+            <button class="answer" data-answer="d"><span>D</span><code>H₁: μ &lt; 5</code></button>
+          </div>
+          <div class="feedback hidden" id="answer-feedback" aria-live="polite"></div>
+          <div class="question-footer"><span id="question-status">Choose an answer to see your explanation.</span><button class="secondary-button" id="reset-question" type="button">Try again ↻</button></div>
+        </div>
+      </section>
+
+      <section class="section-block" id="formula-library">
+        <div class="section-heading"><div><p class="eyebrow">YOUR REFERENCE DESK</p><h2>Formula library</h2></div><span class="muted">Theory · Use case · Meaning</span></div>
+        <div class="formula-card"><div><span class="formula-type">CHAPTER 7 · ONE-SAMPLE Z-TEST</span><h3>Standardized distance from the claim</h3><p>Measures how many standard errors separate the sample mean from the hypothesized population mean.</p><span class="formula-use"><b>Use when:</b> Testing a population mean with known population standard deviation, when test assumptions are satisfied.</span></div><div class="formula-display"><code>z = (x̄ − μ₀)<br/><span>────────────</span><br/>(σ / √n)</code></div></div>
+        <div class="formula-card"><div><span class="formula-type">FOUNDATION · STANDARD ERROR</span><h3>Standard error of the mean</h3><p>Describes the standard deviation of the sampling distribution of the sample mean.</p><span class="formula-use"><b>Why it matters:</b> It measures sample-to-sample variability and forms the denominator of the Z statistic.</span></div><div class="formula-display"><code>SE = σ / √n</code></div></div>
+        <p class="source-note">Course alignment: BUSN 230 Fall 2026 syllabus. Chapter 7 is listed as one-sample hypothesis tests; Chapter 8 as two-sample tests. The uploaded midterm formula sheet covers Chapters 1–6, so Chapter 7 formulas and procedures here are supplemental until class materials confirm the professor's exact approach.</p>
+      </section>
+
+      <section class="section-block next-section" id="chapter-eight"><div><p class="eyebrow">CHAPTER 08 · TWO-SAMPLE TESTS</p><h2>Compare two groups.</h2><p>Next: learn when samples are independent or paired, why the difference between means matters, and how to select the appropriate two-sample procedure.</p></div><span class="next-icon">⇄</span></section>
+      <footer>STUDY STUDIO <span>Built for learning, not memorizing.</span></footer>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
